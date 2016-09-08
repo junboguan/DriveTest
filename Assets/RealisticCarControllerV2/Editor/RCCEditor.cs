@@ -373,8 +373,9 @@ public class RCCEditor : Editor {
 			EditorGUILayout.PropertyField(serializedObject.FindProperty("chassisVerticalLean"), new GUIContent("Chassis Vertical Lean Sensitivity"), false);
 			EditorGUILayout.PropertyField(serializedObject.FindProperty("chassisHorizontalLean"), new GUIContent("Chassis Horizontal Lean Sensitivity"), false);
 			EditorGUILayout.PropertyField(serializedObject.FindProperty("engineTorqueCurve"), true);
-			
-		}
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("idleEngineTorqueCurve"), true);
+
+        }
 		
 		if(SoundSettings){
 			
